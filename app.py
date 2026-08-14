@@ -1,10 +1,11 @@
 import streamlit as st
+import pandas as pd
 from datetime import date, datetime
 from urllib.parse import quote
 from db import init_db, get_db, upsert_config_defaults
 from ocr import extract_ranking
 from analytics import (
-    get_day_rows, get_executives_for_date, calculate_executive_metrics,
+    get_executives_for_date, calculate_executive_metrics,
     calculate_day_awards, get_month_history, get_available_months
 )
 
